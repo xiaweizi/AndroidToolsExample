@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "张三",
+      "phone": "@tools:sample/us_phones",
+      "time": "@tools:sample/date/hhmmss",
+      "avatar": "@tools:sample/avatars"
+    },
+    {
+      "name": "李四",
+      "phone": "@tools:sample/us_phones",
+      "time": "@tools:sample/date/hhmmss",
+      "avatar": "@tools:sample/avatars"
+    },
+    {
+      "name": "赵五",
+      "phone": "@tools:sample/us_phones",
+      "time": "@tools:sample/date/hhmmss",
+      "avatar": "@tools:sample/avatars"
+    },
+    {
+      "name": "王二麻",
+      "phone": "@tools:sample/us_phones",
+      "time": "@tools:sample/date/hhmmss",
+      "avatar": "@tools:sample/avatars"
+    }
+  ]
+}
