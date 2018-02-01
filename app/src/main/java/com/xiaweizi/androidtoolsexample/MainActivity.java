@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
     public void common(View view) {
         startActivity(new Intent(MainActivity.this, CommonActivity.class));
     }
+
+    public void RecyclerView(View view) {
+        startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
+    }
 }
