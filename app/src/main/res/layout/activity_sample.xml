@@ -1,10 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:stretchColumns="2"
     tools:context="com.xiaweizi.androidtoolsexample.SampleActivity">
 
-</LinearLayout>
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/full_names" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/full_names" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/first_names" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/first_names" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/last_names" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/last_names" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/us_zipcodes" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/us_zipcodes" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/us_phones" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/us_phones" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/lorem" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/lorem" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/date/day_of_week" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/date/day_of_week" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/date/ddmmyy" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/date/ddmmyy" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/date/mmddyy" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/date/mmddyy" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/date/hhmm" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/date/hhmm" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="sample/date/hhmmss" />
+
+        <TextView
+            android:layout_weight="1"
+            tools:text="@tools:sample/date/hhmmss" />
+    </TableRow>
+
+
+
+</TableLayout>
