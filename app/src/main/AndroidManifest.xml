@@ -19,7 +19,8 @@
         <activity android:name=".CommonActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".GridViewActivity"></activity>
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".OtherActivity"></activity>
     </application>
 
 </manifest>

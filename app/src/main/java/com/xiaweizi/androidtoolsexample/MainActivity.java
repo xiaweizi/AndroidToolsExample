@@ -28,4 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public void GridView(View view) {
         startActivity(new Intent(MainActivity.this, GridViewActivity.class));
     }
+
+    public void Other(View view) {
+        startActivity(new Intent(MainActivity.this, OtherActivity.class));
+    }
 }
