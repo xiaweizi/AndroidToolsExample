@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CommonActivity" />
-        <activity android:name=".RecyclerViewActivity"/>
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".ListViewActivity"></activity>
     </application>
 
 </manifest>

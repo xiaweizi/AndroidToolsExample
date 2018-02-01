@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
     public void RecyclerView(View view) {
         startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
     }
+
+    public void ListView(View view) {
+        startActivity(new Intent(MainActivity.this, ListViewActivity.class));
+    }
 }
