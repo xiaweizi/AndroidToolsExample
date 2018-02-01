@@ -20,7 +20,8 @@
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".GridViewActivity" />
-        <activity android:name=".OtherActivity"></activity>
+        <activity android:name=".OtherActivity" />
+        <activity android:name=".SampleActivity"></activity>
     </application>
 
 </manifest>
