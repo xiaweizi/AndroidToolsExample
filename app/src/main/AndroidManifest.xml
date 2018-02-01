@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".CommonActivity" />
         <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".GridViewActivity"></activity>
     </application>
 
 </manifest>

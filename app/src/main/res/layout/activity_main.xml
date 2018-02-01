@@ -36,4 +36,13 @@
         android:onClick="ListView"
         android:textAllCaps="false" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="GridView"
+        android:onClick="GridView"
+        android:textAllCaps="false" />
+
 </LinearLayout>

@@ -24,4 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public void ListView(View view) {
         startActivity(new Intent(MainActivity.this, ListViewActivity.class));
     }
+
+    public void GridView(View view) {
+        startActivity(new Intent(MainActivity.this, GridViewActivity.class));
+    }
 }
