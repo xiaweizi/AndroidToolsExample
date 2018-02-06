@@ -12,7 +12,7 @@
 
 ![GridView 预览.png](http://upload-images.jianshu.io/upload_images/4043475-55f190ae724d6e32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-`XML`中的代码区区几行，但是右侧的`preview`效果却很直接，还有就是这些数据并不会打到`apk`中，直接运行是没有任何效果的，这就是厉害之处！相关代码已提交到`Github`上: [Android Tools](https://github.com/xiaweizi/AndroidToolsExample)
+`XML`中的代码区区几行，但是右侧的`preview`效果却很直接，还有就是这些数据并不会打到`apk`中，直接运行是没有任何效果的，这就是厉害之处！
 
 ## 初步使用
 
