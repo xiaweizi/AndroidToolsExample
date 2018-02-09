@@ -8,6 +8,8 @@
 
 直接看一下效果，最为清楚：
 
+![RecyclerView.gif](http://upload-images.jianshu.io/upload_images/4043475-4b0507d661130b3d.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ![ListView 预览.png](http://upload-images.jianshu.io/upload_images/4043475-d4d0aa1a853870c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![GridView 预览.png](http://upload-images.jianshu.io/upload_images/4043475-55f190ae724d6e32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -19,24 +21,24 @@
 既然是命名空间，那肯定就要在`XML`开头就要声明。
 
     xmlns:tools="http://schemas.android.com/tools"
-    
+
 类似于
 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    
+
 然后就可以使用`tools`的相关属性了。属性功能很多很全，我就介绍一下常用的，文尾会贴上相关的文章链接。
 
 **View 相关**
 
 先从`view`相关说起，在`XML`中`view`的`android`任意属性值，可以直接替换成`tools`，这样就可以实现实时的预览效果，并且正式部署之后不会展示。有点类似于`dataBinding`中的 `default`属性,以`TextView`为例。
-    
+
     //1. 原生
     android:text="test text"
     //2. databinding
     android:text='@{viewModel.content, default="test text"}'
     //3. tools
     tools:text="test text"
-    
+
 `preview`的效果是一样的，不过除了 1 以外，其他运行效果是根据代码中设置的内容决定的，真正做到了测试预览。
 
 之前也说了，`view`的其他属性它都支持。
@@ -46,13 +48,13 @@
 通过
 
     tools:context="com.xiaweizi.androidtoolsexample.CommonActivity"
-    
+
 的方式在根部局引用，主要的作用声明该布局文件默认关联的`Activity`，引号传`Activity`类的完整包名。随之就可以开启一些与其相关的特性。比如日常点击事件中，就可以直接在`XML`中声明`onClick`的方法名，然后会有错误的`lint`提示，需要你在`Activity`中创建改方法，跟随着`AS`的智能指引，便可创建对应的方法。点击事件的处理便可以放在里面。
 
 **showIn**
 
     tools:showIn="@layout/activity_other"
-    
+
 在使用`include`或者`merge`时，内层布局是预览不到外层的布局的。那通过`showIn`链接到外层布局，就可以直接连同外层布局一同展示出来。
 
 ![showIn](http://upload-images.jianshu.io/upload_images/4043475-3e1ce6356b84a181.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -91,7 +93,7 @@
     tools:listheader="@layout/list_header"
     // 3. 脚布局的预览展示
     tools:listfooter="@layout/list_footer"
-    
+
 > 一开始使用的时候发现不生效，后来发现需要给`ListView`设置`id`，就会立刻生效了。
 
 **GridView**
@@ -102,11 +104,25 @@
 
 **RecyclerView**
 
-![RecyclerView](http://upload-images.jianshu.io/upload_images/4043475-7f970e6c6ebebf55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![RecyclerView.gif](http://upload-images.jianshu.io/upload_images/4043475-4b0507d661130b3d.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-可惜的是`RecyclerView`只支持`itemCount`这个属性。
+说到`RecyclerView`一开始我以为只支持`itemCount`的设置，后来多谢以为小伙伴提的[AndroidToolsExample/issues/1](https://github.com/xiaweizi/AndroidToolsExample/issues/1),我才发现可以支持复杂的列表展示！
 
-**sample** 
+    // 1. 设置展示 item 的数量
+    tools:itemCount="6"
+    // 2. 设置布局方式 三种模式可以选择
+    // GridLayoutManager
+    // LinearLayoutManager
+    // StaggeredGridLayoutManager
+    tools:layoutManager="GridLayoutManager"
+    // 3. item 的布局
+    tools:listitem="@layout/list_content"
+    // 4 设置布局的方向
+    tools:orientation="horizontal"
+    // 5. 设置布局横、纵的列数
+    tools:spanCount="2"
+
+**sample**
 
 有人会好奇列表的数据哪来的，没看你设置，竟然能做到每条数据都不一样。客官别急，接下来就是介绍一下`@tools:sample/*`的强大功能，作为预览视图的占位数据。看一看官网的使用介绍。
 
@@ -174,3 +190,10 @@
 [命名空间介绍](http://blog.csdn.net/p106786860/article/details/53943540)
 
 [tools 大有用处](https://www.jianshu.com/p/2912bcba4465)
+
+
+
+
+
+
+

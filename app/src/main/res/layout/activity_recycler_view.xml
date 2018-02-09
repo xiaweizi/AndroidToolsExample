@@ -9,6 +9,10 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:itemCount="11" />
+        android:layout_height="wrap_content"
+        tools:itemCount="6"
+        tools:layoutManager="GridLayoutManager"
+        tools:listitem="@layout/list_content"
+        tools:orientation="horizontal"
+        tools:spanCount="2" />
 </LinearLayout>
